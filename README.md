@@ -1,5 +1,5 @@
 # Cas Spring-Boot Demo
-This project is a `Spring-Boot` simple application where the login is authenticated by a `Cas Server` (Apereo Central Authentication Service). 
+This project is a `Spring-Boot` simple application where the login is authenticated by a [CAS](https://www.apereo.org/projects/cas) Server (Apereo Central Authentication Service). 
 It includes the needed configuration to connect the client application to the Cas Server. The users allowed to log in are stored in a 
 `Postgres` database, its properties are also exposed in this tutorial.
 
@@ -11,7 +11,7 @@ The version used to run the projects are the following:
 - Java 17.0.5
 - Gradle 5.6.3
 
-We need to deploy both server and client under HTTPS protocol due to the exchange of tickets and validation info made it must be under a secure protocol,
+We need to deploy both server and client under `HTTPS` protocol due to the exchange of tickets and validation info made it must be under a secure protocol,
 for this reason we need to generate a key that will be used by them. We have to go to our pc root directory and find the `etc` folder, usually it is hidden,
 for showing it press `CMD + SHIFT + . `. Inside this folder we create a new one named `cas`. Once we have achived it we run the following command:
 
