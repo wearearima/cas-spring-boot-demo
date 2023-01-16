@@ -101,7 +101,8 @@ services:
 Then, in the terminal, in the directory you have this file you should run `docker-compose up` for creating the database. Once its done, we are going
 to create the table users and to insert a pair of them.
 Choose the IDE you prefer, or intall DBeaver database tool and execute this query:
-`````CREATE TABLE users
+````
+CREATE TABLE users
 (
     id bigint NOT NULL,
     disabled boolean,
@@ -117,12 +118,15 @@ WITH (
     OIDS = FALSE
 );
 ````
+
 That will create the table and now we insert the user:
+
 ````
 INSERT INTO users(
  id, disabled, email, first_name, last_name, expired, password)
  VALUES (1, false, 'user1@test.com', 'test', 'user1', false, '$2y$12$7XQUDwK3QE7oBB0wmVpht.aT7gESI205SgWarj15Wz2Jt6OfglbQ.');
- ````
+````
+
  The password is encoded by bcryp algorithm.
  
  Now you can login with the test user:
