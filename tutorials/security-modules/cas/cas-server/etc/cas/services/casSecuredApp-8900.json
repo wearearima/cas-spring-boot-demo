@@ -1,6 +1,6 @@
 {
   "@class" : "org.apereo.cas.services.RegexRegisteredService",
-  "serviceId" : "https://localhost:8900/cas/login",
+  "serviceId" : "https://localhost:8900/login",
   "name" : "casSecuredApp",
   "id" : 123456789,
   "logoutType" : "BACK_CHANNEL",
