@@ -5,6 +5,6 @@
 <body>
 <h1>You have logged out of Cas Secured Spring Boot App Successfully</h1>
 <br>
-<a href="/logout/cas">Log out of all other Services</a>
+<a href="https://localhost:8443/cas/logout">Log out of all other Services</a>
 </body>
 </html>
